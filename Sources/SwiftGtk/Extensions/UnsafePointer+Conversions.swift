@@ -5,7 +5,9 @@
 import CGtk
 
 extension UnsafePointer where Pointee == gchar {
+
     func toString() -> String {
-        return String(cString: self)
+        String(cString: self)
     }
+
 }
